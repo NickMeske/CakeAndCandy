@@ -1082,7 +1082,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1603,10 +1603,18 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top:100px;
+  padding-bottom:100px;
   margin-right: auto;
   margin-left: auto;
+}
+.second-color {
+   background-color:#00004d;
+   color:#fff;
+}
+.pad-sides {
+    padding-left:50px;
+    padding-right:50px;
 }
 .row {
   margin-right: -15px;
@@ -4596,8 +4604,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #00004d;
+  color:#fff;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4963,12 +4971,10 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
-  
+  color: #FFFFFF;
+  background-color: #00004d;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4993,8 +4999,8 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {

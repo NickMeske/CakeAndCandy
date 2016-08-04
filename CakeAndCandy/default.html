@@ -2,29 +2,48 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Content/bootstrap.css">
-    <script src="Scripts/jquery-1.9.1.intellisense.js"></script>
-    <script src="Scripts/jquery-1.9.1.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Cake And Candy</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#treats">Treats</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!--greeting-->
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1>
-                Cake and Candy World
-            </h1>
-            <h3>
-                Special Occasion Treats in the Fargo-Moorhead, Detroit Lakes Area
-            </h3>
-        </div>
+    <div class="jumbotron text-center" id="home">
+        <h1>
+            Cake and Candy World
+        </h1>
+        <p>
+            Special Occasion Treats in the Fargo-Moorhead, Detroit Lakes Area
+        </p>
     </div>
 
+
     <!--treats-->
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center pad-sides" id="treats">
         <h2>Treats</h2>
 
         <div class="row text-center">
@@ -47,18 +66,17 @@
     </div>
 
     <!--special occasions-->
-   <div class="container-fluid text-center">
-       <h1>
-           Special Occasion Treats
-       </h1>
-       <p>
-           Something about what you offer and weddings and stuff.
-       </p>
-   </div>
+    <div class="container-fluid text-center second-color" id="events">
+        <h1>
+            Special Occasion Treats
+        </h1>
+        <p>
+            Something about what you offer and weddings and stuff.
+        </p>
+    </div>
 
     <!--Gallery-->
-    <div class="container-fluid">
-        <h1>Gallery</h1>
+    <div class="container-fluid" id="gallery">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -98,6 +116,51 @@
         <p>Something about you here.</p>
         <p>Fargo-Moorhead, Detroit Lakes area</p>
     </div>
+
+    <!--scroll to top-->
+    <footer class="container-fluid text-center">
+        <a href="#home" title="Back To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+
+    <!--smooth scrolling-->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#home']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
 
 </body>
 </html>
