@@ -66,6 +66,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\11.JPG" />
+    <Content Include="Images\13.JPG" />
+    <Content Include="Images\15.JPG" />
+    <Content Include="Images\9.JPG" />
+    <Content Include="Images\cakePopButton.JPG" />
+    <Content Include="Images\cheeseCakeButton.jpg" />
+    <Content Include="Images\cupcakeButton.JPG" />
+    <Content Include="Images\five.jpg" />
+    <Content Include="Images\gallery1.JPG" />
+    <Content Include="Images\gallery2.JPG" />
+    <Content Include="Images\gallery3.jpg" />
+    <Content Include="Images\gallery4.JPG" />
+    <Content Include="Images\gallery5.JPG" />
+    <Content Include="Images\gallery6.JPG" />
+    <Content Include="Images\gallery7.JPG" />
+    <Content Include="Images\jumbotronPic.JPG" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
@@ -100,9 +116,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

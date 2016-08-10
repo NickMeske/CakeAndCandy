@@ -1625,6 +1625,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom:25px
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -3039,6 +3040,8 @@ select[multiple].input-lg {
   outline-offset: -2px;
 }
 .btn-circle {
+max-height: 300px;
+max-width:300px;
   text-align: center;
   padding: 6px 0;
   font-size: 12px;
@@ -4975,6 +4978,7 @@ a.badge:focus {
   background-color: #00004d;
   padding-top: 50px;
   padding-bottom:50px;
+  background-image: url(/Images/jumbotronPic.jpg)
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -6255,9 +6259,11 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow:hidden;
 }
 .carousel-inner > .item {
+    width:100%;
+    margin:auto;
   position: relative;
   display: none;
   -webkit-transition: .6s ease-in-out left;
