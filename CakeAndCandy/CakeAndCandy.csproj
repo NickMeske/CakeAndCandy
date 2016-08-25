@@ -81,6 +81,7 @@
     <Content Include="Images\gallery5.JPG" />
     <Content Include="Images\gallery6.JPG" />
     <Content Include="Images\gallery7.JPG" />
+    <Content Include="Images\jumbo2.jpg" />
     <Content Include="Images\jumbotronPic.JPG" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />

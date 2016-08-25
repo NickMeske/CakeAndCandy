@@ -330,7 +330,7 @@ th {
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
 }
 
 .glyphicon-asterisk:before {
@@ -2027,12 +2027,12 @@ pre {
     padding-bottom: 10px;
 }
 .second-color {
-    /*background-color: #00004d;*/
-    background-color:#0000ff;
-    color: #fff;
+    background-color: #f5f5ef;
+    /*background-color:#0000ff;
+    color: #fff;*/
 }
 .second-text-color{
-    color:#0000ff;
+    color:#000;
 }
 
 .pad-sides {
@@ -5653,12 +5653,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-inverse {
-    background-color:#0000ff;
-    color: #fff;
+    background-color:#f5f5ef;
+    color: #000;
 }
 
     .navbar-inverse .navbar-brand {
-        color: #fff;
+        color: #000;
     }
 
         .navbar-inverse .navbar-brand:hover,
@@ -5672,7 +5672,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        color: #fff;
+        color: #000;
         font-size: 15px;
     }
 
@@ -6096,13 +6096,13 @@ a.badge:focus {
 
 .jumbotron {
     /*color: #6666ff;*/
-    color: #FFFFFF;
+    color: #fff;
     background-color: #00004d;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 15px;
-    /*background-size: cover;*/
-    background-image: url(/Images/jumbotronPic.jpg);
+    background-size: cover;
+    background-image: url(/Images/jumbo2.jpg);
     overflow: hidden;
 }
 
@@ -6136,8 +6136,8 @@ a.badge:focus {
 
 @media screen and (min-width: 768px) {
     .jumbotron {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 
     .container .jumbotron,
@@ -6148,7 +6148,7 @@ a.badge:focus {
 
     .jumbotron h1,
     .jumbotron .h1 {
-        font-size: 120px;
+        font-size: 70px;
         padding-left: 15px;
     }
 }
@@ -6338,7 +6338,7 @@ a.thumbnail.active {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    -webkit-background-size: 40px 40px;
+
     background-size: 40px 40px;
 }
 
